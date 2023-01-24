@@ -55,7 +55,7 @@ ON dept_emp.dept_no = departments.dept_no
 JOIN employees
 ON dept_emp.emp_no = employees.emp_no
 WHERE departments.dept_name LIKE 'Sales'
-OR departments.dept_name LIKE 'Development' --didn't work
+OR departments.dept_name LIKE 'Development'
 
 --frequency counts of all employee last names in descending order
 SELECT employees.last_name, COUNT(employees.last_name) AS frequency_count
